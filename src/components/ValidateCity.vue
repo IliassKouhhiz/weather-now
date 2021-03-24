@@ -39,7 +39,7 @@ export default {
     async fetch_data() {
       try {
         const response = await axios.get(
-          `http://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=${this.api_key}`
+          `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=${this.api_key}`
         );
         this.api_data = await response;
         this.city_not_found = false;

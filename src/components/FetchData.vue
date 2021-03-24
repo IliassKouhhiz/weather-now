@@ -38,7 +38,7 @@ export default {
       if (this.city.length > 0 && this.lang === "IT") {
         try {
           const response_1 = await axios.get(
-            `http://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=${this.api_key}`
+            `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=${this.api_key}`
           );
           this.api_data_1 = await response_1;
           this.city_not_found = false;
@@ -59,7 +59,7 @@ export default {
       } else if (this.city.length > 0 && this.lang === "ENG") {
         try {
           const response_1 = await axios.get(
-            `http://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&lang=it&appid=${this.api_key}`
+            `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&lang=it&appid=${this.api_key}`
           );
           this.api_data_1 = await response_1;
           this.city_not_found = false;
@@ -86,7 +86,7 @@ export default {
         this.lang === "IT"
       ) {
         const response_1 = await axios.get(
-          `http://api.openweathermap.org/data/2.5/weather?q=${localStorage.getItem(
+          `https://api.openweathermap.org/data/2.5/weather?q=${localStorage.getItem(
             "valid_city_from_HP"
           )}&units=metric&appid=${this.api_key}`
         );
@@ -106,7 +106,7 @@ export default {
         this.lang === "ENG"
       ) {
         const response_1 = await axios.get(
-          `http://api.openweathermap.org/data/2.5/weather?q=${localStorage.getItem(
+          `https://api.openweathermap.org/data/2.5/weather?q=${localStorage.getItem(
             "valid_city_from_HP"
           )}&units=metric&lang=it&appid=${this.api_key}`
         );
