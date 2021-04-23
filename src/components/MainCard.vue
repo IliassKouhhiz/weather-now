@@ -717,6 +717,11 @@ p {
 
 /*  MEDIA QUERIES  */
 @media only screen and (min-width: 1000px) {
+  #data1 {
+    min-width: 400px;
+    min-height: 400px;
+  }
+  
   #data2 {
     min-width: 400px;
     min-height: 400px;
