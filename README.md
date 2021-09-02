@@ -1,24 +1,12 @@
 # weather-now
 
-## Project setup
+### Description
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+Weather Now is a simple weather forecast web application, developed entirely on vue.js.
 ```
 
-### Compiles and minifies for production
+### Features
 ```
-npm run build
-```
+It's possible to search for a specific city or use geolocation. It can display up to six days forecast, and also various informations such as humidity, visibility, uv, wind and more. There is also the possibility to change the language from english to italian.
 
-### Lints and fixes files
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
